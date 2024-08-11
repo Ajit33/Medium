@@ -12,7 +12,7 @@ const userSchema=new mongoose.Schema({
     required:true,
     unique:true
   } ,
-  passwrod:{
+  password:{
     type:String,
     required:true,
   }
@@ -20,4 +20,4 @@ const userSchema=new mongoose.Schema({
 
 
 const User=mongoose.model("User",userSchema);
-module.exports={User}
+module.exports=User
