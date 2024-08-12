@@ -12,7 +12,7 @@ const commentSchema=new mongoose.Schema({
     },
     postId:{
         type:String,
-        requiredtrue
+        required:true
     },
     userId:{
         type:String,
@@ -23,3 +23,4 @@ const commentSchema=new mongoose.Schema({
 
 
 const Comment=mongoose.model("Comment",commentSchema);
+module.exports=Comment
